@@ -13,7 +13,6 @@ concurrency:
 env:
   SCHEME: Nicora
   PROJECT_FILE: Nicora.xcodeproj
-  XCODE_VERSION: '16.2'
 
 jobs:
   test:
@@ -24,8 +23,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select Xcode ${{ env.XCODE_VERSION }}
-        run: sudo xcode-select -s /Applications/Xcode_${{ env.XCODE_VERSION }}.app/Contents/Developer
+      # Use the runner's default Xcode: GitHub guarantees its iOS simulator
+      # runtime is installed (a pinned Xcode may be missing the sim runtime).
+      - name: Show Xcode
+        run: xcodebuild -version
 
       - name: Pick an available iPhone simulator
         id: sim
