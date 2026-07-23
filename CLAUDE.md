@@ -100,8 +100,9 @@ CLAUDE.md
 
 - Everything crossing a lane boundary goes through a protocol in `Sources/Contracts/`.
 - Tony never references a concrete type owned by Jimmy. Inject via protocol.
-- Changing a protocol signature: open an issue labeled `contract-change`, wait for
-  approval, then implement, then comment on the issue so the other lane knows.
+- Changing a protocol signature: open an issue whose title begins with
+  `[contract-change]` (no label — the title is the signal), wait for approval,
+  then implement, then comment on the issue so the other lane knows.
 - Jimmy maintains mocks in `Sources/Contracts/Mocks/` so Tony is never blocked
   waiting on a real implementation.
 
@@ -113,8 +114,8 @@ Run this sequence at the start of every session:
 
 1. `git fetch --all --prune && git pull --rebase origin main`
 2. `gh issue list --label lane:<tony|jimmy> --state open`
-3. Claim one: `gh issue comment <n> --body "claiming"` then
-   `gh issue edit <n> --add-label in-progress`
+3. Claim one by commenting on the issue: `gh issue comment <n> --body "claiming"`.
+   The claim comment is the only signal — no labels are used for claiming.
 4. `git checkout -b <agent>/<issue>-<slug>` — e.g. `tony/12-login-screen`
 5. Work, commit in small steps, `git push -u origin HEAD`
 6. `gh pr create --fill --base main`, include `Closes #<issue>` in the body
