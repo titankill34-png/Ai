@@ -28,7 +28,8 @@ final class StatsEngineTests: XCTestCase {
 
     func testAverageInterval() {
         let start = Date(timeIntervalSince1970: 1_700_000_000)
-        let logs = [0.0, 3600, 3 * 3600].map {
+        let offsets: [TimeInterval] = [0, 3600, 10800]
+        let logs = offsets.map {
             SmokeLogEntry(timestamp: start.addingTimeInterval($0), cravingScore: 1)
         }
         // total span 10800s over 2 gaps → 5400s.
