@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA000000000000000000000A"
+               BlueprintIdentifier = "42AEFBAE01D2DFD981F7DA7D"
                BuildableName = "Nicora.app"
                BlueprintName = "Nicora"
                ReferencedContainer = "container:Nicora.xcodeproj">
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DFEE19449146DDDB4DD78AD1"
+               BuildableName = "NicoraTests.xctest"
+               BlueprintName = "NicoraTests"
+               ReferencedContainer = "container:Nicora.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -44,7 +54,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA000000000000000000000A"
+            BlueprintIdentifier = "42AEFBAE01D2DFD981F7DA7D"
             BuildableName = "Nicora.app"
             BlueprintName = "Nicora"
             ReferencedContainer = "container:Nicora.xcodeproj">
@@ -61,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA000000000000000000000A"
+            BlueprintIdentifier = "42AEFBAE01D2DFD981F7DA7D"
             BuildableName = "Nicora.app"
             BlueprintName = "Nicora"
             ReferencedContainer = "container:Nicora.xcodeproj">
