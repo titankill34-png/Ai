@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA0000000000000000000008 /* NicoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000006 /* NicoraApp.swift */; };
-		AA0000000000000000000009 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000007 /* ContentView.swift */; };
+		A61178806BBEE92BC4CDF416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D4218E11F50B42835DB4C /* ContentView.swift */; };
+		220F363A1CDB355961AEAFB4 /* NicoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48AE579FECED2AA552C0617 /* NicoraApp.swift */; };
+		981B278481B6B8643070F275 /* SmokeLogStoringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */; };
+		F71A778DF6219469D4665EAC /* SmokeLogStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */; };
+		8BD597726E4FB9FB864CD94C /* SmokeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A8B08658790DBFFB01B38 /* SmokeLog.swift */; };
+		4AA4B1BD95F8C850319CD0E1 /* SmokeLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA535746E3FF460CEAA051 /* SmokeLogStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA0000000000000000000005 /* Nicora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nicora.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0000000000000000000006 /* NicoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoraApp.swift; sourceTree = "<group>"; };
-		AA0000000000000000000007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2A57DC1D883FD21FB995169 /* Nicora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nicora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2D4218E11F50B42835DB4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B48AE579FECED2AA552C0617 /* NicoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoraApp.swift; sourceTree = "<group>"; };
+		859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStoringMock.swift; sourceTree = "<group>"; };
+		0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStoring.swift; sourceTree = "<group>"; };
+		BC9A8B08658790DBFFB01B38 /* SmokeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLog.swift; sourceTree = "<group>"; };
+		CEFA535746E3FF460CEAA051 /* SmokeLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA000000000000000000000C /* Frameworks */ = {
+		4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -28,41 +36,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA0000000000000000000002 = {
+		868CCC283A1C1F0C25F5EB57 /* Nicora */ = {
 			isa = PBXGroup;
 			children = (
-				AA0000000000000000000004 /* Nicora */,
-				AA0000000000000000000003 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		AA0000000000000000000003 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA0000000000000000000005 /* Nicora.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AA0000000000000000000004 /* Nicora */ = {
-			isa = PBXGroup;
-			children = (
-				AA0000000000000000000006 /* NicoraApp.swift */,
-				AA0000000000000000000007 /* ContentView.swift */,
+				6B2D4218E11F50B42835DB4C /* ContentView.swift */,
+				B48AE579FECED2AA552C0617 /* NicoraApp.swift */,
 			);
 			path = Nicora;
+			sourceTree = "<group>";
+		};
+		C9135086745B5A6FB74F0BC0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2F42B9C95A572E32F7F29EAF /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				C9135086745B5A6FB74F0BC0 /* Mocks */,
+				0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		12C72E929FD0D87E16D239CB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A8B08658790DBFFB01B38 /* SmokeLog.swift */,
+				CEFA535746E3FF460CEAA051 /* SmokeLogStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		3574DC817698B6A3F635F1EA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2F42B9C95A572E32F7F29EAF /* Contracts */,
+				12C72E929FD0D87E16D239CB /* Persistence */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8D3FC6DB5D0827F168A73277 = {
+			isa = PBXGroup;
+			children = (
+				868CCC283A1C1F0C25F5EB57 /* Nicora */,
+				3574DC817698B6A3F635F1EA /* Sources */,
+				86024CAD1E83101D97359D73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86024CAD1E83101D97359D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A57DC1D883FD21FB995169 /* Nicora.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA000000000000000000000A /* Nicora */ = {
+		42AEFBAE01D2DFD981F7DA7D /* Nicora */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA000000000000000000000F /* Build configuration list for PBXNativeTarget "Nicora" */;
+			buildConfigurationList = EAF116FE40D68E4ABB26094B /* Build configuration list for PBXNativeTarget "Nicora" */;
 			buildPhases = (
-				AA000000000000000000000B /* Sources */,
-				AA000000000000000000000C /* Frameworks */,
-				AA000000000000000000000D /* Resources */,
+				F2AB5FB218DA8B84623F4557 /* Sources */,
+				4F6F5CC3FCCF73F75AE9CCF4 /* Frameworks */,
+				55B558C7EF820E6E00E5993B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -70,25 +114,25 @@
 			);
 			name = Nicora;
 			productName = Nicora;
-			productReference = AA0000000000000000000005 /* Nicora.app */;
+			productReference = D2A57DC1D883FD21FB995169 /* Nicora.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AA0000000000000000000001 /* Project object */ = {
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					AA000000000000000000000A = {
+					42AEFBAE01D2DFD981F7DA7D = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = AA000000000000000000000E /* Build configuration list for PBXProject "Nicora" */;
+			buildConfigurationList = 56283EBD6DD86A56CED63937 /* Build configuration list for PBXProject "Nicora" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -96,18 +140,18 @@
 				en,
 				Base,
 			);
-			mainGroup = AA0000000000000000000002;
-			productRefGroup = AA0000000000000000000003 /* Products */;
+			mainGroup = 8D3FC6DB5D0827F168A73277;
+			productRefGroup = 86024CAD1E83101D97359D73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA000000000000000000000A /* Nicora */,
+				42AEFBAE01D2DFD981F7DA7D /* Nicora */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA000000000000000000000D /* Resources */ = {
+		55B558C7EF820E6E00E5993B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,51 +161,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA000000000000000000000B /* Sources */ = {
+		F2AB5FB218DA8B84623F4557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0000000000000000000008 /* NicoraApp.swift in Sources */,
-				AA0000000000000000000009 /* ContentView.swift in Sources */,
+				A61178806BBEE92BC4CDF416 /* ContentView.swift in Sources */,
+				220F363A1CDB355961AEAFB4 /* NicoraApp.swift in Sources */,
+				981B278481B6B8643070F275 /* SmokeLogStoringMock.swift in Sources */,
+				F71A778DF6219469D4665EAC /* SmokeLogStoring.swift in Sources */,
+				8BD597726E4FB9FB864CD94C /* SmokeLog.swift in Sources */,
+				4AA4B1BD95F8C850319CD0E1 /* SmokeLogStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AA0000000000000000000010 /* Debug */ = {
+		FA9139DD8B03E3F922556BF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -175,14 +198,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -192,39 +208,14 @@
 			};
 			name = Debug;
 		};
-		AA0000000000000000000011 /* Release */ = {
+		FFE2104CCFAB79205AC64460 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -232,14 +223,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -248,10 +232,9 @@
 			};
 			name = Release;
 		};
-		AA0000000000000000000012 /* Debug */ = {
+		D8579749783A718541606A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -273,10 +256,9 @@
 			};
 			name = Debug;
 		};
-		AA0000000000000000000013 /* Release */ = {
+		553194FECB7E1C4EBBAFB6CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -301,25 +283,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA000000000000000000000E /* Build configuration list for PBXProject "Nicora" */ = {
+		56283EBD6DD86A56CED63937 /* Build configuration list for PBXProject "Nicora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA0000000000000000000010 /* Debug */,
-				AA0000000000000000000011 /* Release */,
+				FA9139DD8B03E3F922556BF8 /* Debug */,
+				FFE2104CCFAB79205AC64460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA000000000000000000000F /* Build configuration list for PBXNativeTarget "Nicora" */ = {
+		EAF116FE40D68E4ABB26094B /* Build configuration list for PBXNativeTarget "Nicora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA0000000000000000000012 /* Debug */,
-				AA0000000000000000000013 /* Release */,
+				D8579749783A718541606A67 /* Debug */,
+				553194FECB7E1C4EBBAFB6CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AA0000000000000000000001 /* Project object */;
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
 }
