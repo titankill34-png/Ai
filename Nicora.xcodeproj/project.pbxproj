@@ -11,11 +11,14 @@
 		220F363A1CDB355961AEAFB4 /* NicoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48AE579FECED2AA552C0617 /* NicoraApp.swift */; };
 		5C3C0EC262E94EBAA64C690B /* IntervalProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99109ECC64A99F54979C52C /* IntervalProviding.swift */; };
 		D228C26C69F3D225EE16D63F /* IntervalProvidingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313B20F53A1F7F7E3F07AC9 /* IntervalProvidingMock.swift */; };
+		0600D180F1B7BDD45D82EEFC /* NotificationSchedulingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461FDB1BA3417A461D724B9 /* NotificationSchedulingMock.swift */; };
 		981B278481B6B8643070F275 /* SmokeLogStoringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */; };
 		9E408EF0973CB885A7F270F2 /* StatsProvidingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479CFF4E90F6390F86CCD7C /* StatsProvidingMock.swift */; };
+		C50B56ED2B07032419C20D25 /* NotificationScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C1AEE50F467D1D5B1F009 /* NotificationScheduling.swift */; };
 		F71A778DF6219469D4665EAC /* SmokeLogStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */; };
 		A7CB1FF80F2B20516F176730 /* StatsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549220E24DB8183E6E7198CC /* StatsProviding.swift */; };
 		202091648EB945F4C2EAB75D /* IntervalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C590CFB1A039D24D93DC68A /* IntervalEngine.swift */; };
+		D886418C0AD85F95DE7F0D2C /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922B6AF04815D392DD4DB1A /* NotificationScheduler.swift */; };
 		B902D9AA022F8B7E7CEFE49E /* StatsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AA29BED52E3E2AB32BA4E /* StatsEngine.swift */; };
 		8BD597726E4FB9FB864CD94C /* SmokeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A8B08658790DBFFB01B38 /* SmokeLog.swift */; };
 		4AA4B1BD95F8C850319CD0E1 /* SmokeLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA535746E3FF460CEAA051 /* SmokeLogStore.swift */; };
@@ -27,11 +30,14 @@
 		B48AE579FECED2AA552C0617 /* NicoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoraApp.swift; sourceTree = "<group>"; };
 		A99109ECC64A99F54979C52C /* IntervalProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalProviding.swift; sourceTree = "<group>"; };
 		2313B20F53A1F7F7E3F07AC9 /* IntervalProvidingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalProvidingMock.swift; sourceTree = "<group>"; };
+		A461FDB1BA3417A461D724B9 /* NotificationSchedulingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSchedulingMock.swift; sourceTree = "<group>"; };
 		859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStoringMock.swift; sourceTree = "<group>"; };
 		6479CFF4E90F6390F86CCD7C /* StatsProvidingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsProvidingMock.swift; sourceTree = "<group>"; };
+		A43C1AEE50F467D1D5B1F009 /* NotificationScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduling.swift; sourceTree = "<group>"; };
 		0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStoring.swift; sourceTree = "<group>"; };
 		549220E24DB8183E6E7198CC /* StatsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsProviding.swift; sourceTree = "<group>"; };
 		7C590CFB1A039D24D93DC68A /* IntervalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalEngine.swift; sourceTree = "<group>"; };
+		4922B6AF04815D392DD4DB1A /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		D00AA29BED52E3E2AB32BA4E /* StatsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsEngine.swift; sourceTree = "<group>"; };
 		BC9A8B08658790DBFFB01B38 /* SmokeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLog.swift; sourceTree = "<group>"; };
 		CEFA535746E3FF460CEAA051 /* SmokeLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeLogStore.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				2313B20F53A1F7F7E3F07AC9 /* IntervalProvidingMock.swift */,
+				A461FDB1BA3417A461D724B9 /* NotificationSchedulingMock.swift */,
 				859951FB90BD03EC94552E4A /* SmokeLogStoringMock.swift */,
 				6479CFF4E90F6390F86CCD7C /* StatsProvidingMock.swift */,
 			);
@@ -72,6 +79,7 @@
 			children = (
 				C9135086745B5A6FB74F0BC0 /* Mocks */,
 				A99109ECC64A99F54979C52C /* IntervalProviding.swift */,
+				A43C1AEE50F467D1D5B1F009 /* NotificationScheduling.swift */,
 				0D59EF8D348D4341A49A4650 /* SmokeLogStoring.swift */,
 				549220E24DB8183E6E7198CC /* StatsProviding.swift */,
 			);
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				7C590CFB1A039D24D93DC68A /* IntervalEngine.swift */,
+				4922B6AF04815D392DD4DB1A /* NotificationScheduler.swift */,
 				D00AA29BED52E3E2AB32BA4E /* StatsEngine.swift */,
 			);
 			path = Core;
@@ -195,11 +204,14 @@
 				220F363A1CDB355961AEAFB4 /* NicoraApp.swift in Sources */,
 				5C3C0EC262E94EBAA64C690B /* IntervalProviding.swift in Sources */,
 				D228C26C69F3D225EE16D63F /* IntervalProvidingMock.swift in Sources */,
+				0600D180F1B7BDD45D82EEFC /* NotificationSchedulingMock.swift in Sources */,
 				981B278481B6B8643070F275 /* SmokeLogStoringMock.swift in Sources */,
 				9E408EF0973CB885A7F270F2 /* StatsProvidingMock.swift in Sources */,
+				C50B56ED2B07032419C20D25 /* NotificationScheduling.swift in Sources */,
 				F71A778DF6219469D4665EAC /* SmokeLogStoring.swift in Sources */,
 				A7CB1FF80F2B20516F176730 /* StatsProviding.swift in Sources */,
 				202091648EB945F4C2EAB75D /* IntervalEngine.swift in Sources */,
+				D886418C0AD85F95DE7F0D2C /* NotificationScheduler.swift in Sources */,
 				B902D9AA022F8B7E7CEFE49E /* StatsEngine.swift in Sources */,
 				8BD597726E4FB9FB864CD94C /* SmokeLog.swift in Sources */,
 				4AA4B1BD95F8C850319CD0E1 /* SmokeLogStore.swift in Sources */,
