@@ -1,0 +1,11 @@
+{
+  "model": "opusplan",
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(rm -rf /*)",
+      "Bash(git reset --hard origin*)"
+    ]
+  }
+}
